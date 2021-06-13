@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 import Header from '../Header';
-import Home from '../Home';
-import Work from '../Work';
-import YourVoice from '../YourVoice';
-import Contact from '../Contact';
+import Home from '../pages/Home';
+import Work from '../pages/Work';
+import YourVoice from '../pages/YourVoice';
+import Contact from '../pages/Contact';
 
 export default function App() {
   return (
