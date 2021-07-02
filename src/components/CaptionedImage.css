@@ -1,0 +1,47 @@
+@media only screen and (max-width: 768px) {
+  .container {
+    position: relative;
+    width: 90%;
+    margin: 1%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    position: relative;
+    width: 45%;
+    margin: 1%;
+  }
+}
+
+.container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.overlay p, h4 {
+  text-align: center;
+}
+
+.overlay button {
+  width: 30%;
+}

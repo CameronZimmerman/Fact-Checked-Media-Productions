@@ -4,14 +4,73 @@
   color: rgb(194, 194, 194);
 }
 
-.header section {
-  padding: 1%;
-  width: 70%;
-  display: flex;
-  align-content: center;
-  transition: .25s ease;
+@media only screen and (max-width: 768px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 1%;
+  }
+  .links a {
+    margin: 1em;
+    text-decoration: none;
+    color: black;
+    transition: ease .25s;
+  }
+  .regMenu {
+    display: none;
+  }
+  .hamburger {
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    visibility: visible;
+  }
+  .header section {
+    font-size: larger;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    transition: .25s ease;
+  }
 }
-
+@media only screen and (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+  .regMenu {
+    display: visible;
+  }
+  .links {
+    height: fit-content;
+    justify-content: space-evenly;
+    margin-right: 1%;
+  }
+  .links a {
+    margin: 1em;
+    text-decoration: none;
+    color: white;
+    transition: ease .25s;
+  }
+  .header section {
+    width: 70%;
+    font-size: larger;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    transition: .25s ease;
+  }
+}
+.hamburger img {
+  width: 45px;
+  margin-right: 5px;
+}
+.hamMenu {
+  position: absolute;
+  margin-top: 3em;
+  width: 50%;
+  background-color: #000000;
+}
 .header section :hover {
   cursor: pointer;
   color: #55AA88;
@@ -19,6 +78,9 @@
 
 .header section img {
   padding-right: 1%;
+  width: 75px;
+  height: 75px;
+  
 }
 
 .header nav {
@@ -28,19 +90,14 @@
   justify-content: center;
 }
 
-.links {
-  display: flex;
-  height: fit-content;
-  justify-content: space-evenly;
-  margin-right: 1%;
-}
-
 .links a:hover {
   color: #55AA88
 }
 
-.links a {
-  text-decoration: none;
-  color: white;
-  transition: ease .25s;
+.hamMenu.links a{
+  color: #55AA88
+}
+
+.hamMenu.links a:hover{
+  color: white
 }

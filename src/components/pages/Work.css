@@ -1,0 +1,21 @@
+@media only screen and (min-width: 768px) {
+  .workPageContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .workPageContainer {
+    overflow: scroll;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.serviceContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 25em;
+}
