@@ -3,11 +3,12 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 768px) {
   .workPageContainer {
-    overflow: scroll;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -17,5 +18,16 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  height: 25em;
+  margin-bottom: 5%;
+}
+
+.workPageContainer h2 {
+  text-align: center;
+}
+
+.experienceContainer {
+  width: 90%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Home.css';
 
 import CaptionedImage from '../CaptionedImage';
-import Testimonial from '../Testimonial';
+import Testimonial from '../CircularImageText';
 
 const Home = () => {
   return (
@@ -35,14 +35,13 @@ const Home = () => {
         </section>
         <section className={style.upperHomeRight}>
           <div className={style.homeLogo}>
-            <img src="http://placekitten.com/200/200" alt="logo"/>
+            <img src="/assets/FactCheckedCropped.png" alt="logo"/>
             <h2>FACT CHECKED MEDIA PRODUCTIONS</h2>
           </div>
           <div className={style.homeMainText}>
             <h3>What we do</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem error adipisci dicta esse est? Nesciunt qui reiciendis assumenda accusantium officiis. Adipisci rerum, architecto magnam quod sit sed dolor eos quisquam!
-              Eaque amet facere quis consectetur repellat tempore voluptas necessitatibus rem pariatur ex autem voluptatum laborum ullam atque, modi corporis facilis quas eum consequatur cum iure distinctio! Animi placeat reprehenderit beatae.
+              Fact Checked Media Productions is an all purpose podcasting service for those who wish to spread their voice and message. We create a personal connection with each of our clients, skipping the bureaucracy. Together we will build your podcasts platform and audience, ensuring that your message is heard.
             </p>
           </div>
         </section>
@@ -50,9 +49,9 @@ const Home = () => {
       <section className={style.lowerHome}>
         <h2>Testimonials</h2>
         <div className={style.testimonials}>
-          <Testimonial image="/assets/greenlantern.jpg" text={"this is just a test testimonial, the final will be replaced by whatever the actual testimonial is!"} />
-          <Testimonial image="/assets/greenlantern.jpg" text={"this is just a test testimonial, the final will be replaced by whatever the actual testimonial is!"} />
-          <Testimonial image="/assets/greenlantern.jpg" text={"this is just a test testimonial, the final will be replaced by whatever the actual testimonial is!"} />
+          <Testimonial image="/assets/greenlantern.jpg" text={'"this is just a test testimonial, the final will be replaced by whatever the actual testimonial is!"'} />
+          <Testimonial image="/assets/greenlantern.jpg" text={'"this is just a test testimonial, the final will be replaced by whatever the actual testimonial is!"'} />
+          <Testimonial image="/assets/greenlantern.jpg" text={'"this is just a test testimonial, the final will be replaced by whatever the actual testimonial is!"'} />
         </div>
       </section>
     </div>
