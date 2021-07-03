@@ -41,7 +41,7 @@ const Home = () => {
           <div className={style.homeMainText}>
             <h3>What we do</h3>
             <p>
-              Fact Checked Media Productions is an all purpose podcasting service for those who wish to spread their voice and message. We create a personal connection with each of our clients, skipping the bureaucracy. Together we will build your podcasts platform and audience, ensuring that your message is heard.
+              Fact Checked Media Productions is an all purpose podcasting service for those who wish to spread their voice and message. We create a personal connection with each of our clients, skipping the bureaucracy. Together we will build your podcasts platform and audience, ensuring that your message is heard. Pricing is negotiable at a per show or per month basis.
             </p>
           </div>
         </section>
