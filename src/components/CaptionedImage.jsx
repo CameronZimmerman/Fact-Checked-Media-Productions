@@ -1,13 +1,14 @@
 import React from 'react';
 
-import style from '';
+import style from './CaptionedImage.css';
 const CaptionedImage = ({image, heading, text}) => {
   return (
     <div className={style.container}>
-      <image src={image} alt={heading} />
+      <img src={image} alt={heading} />
       <div className={style.overlay}>
         <h4>{heading}</h4>
         <p>{text}</p>
+        <button>View More</button>
       </div>
     </div>
   );

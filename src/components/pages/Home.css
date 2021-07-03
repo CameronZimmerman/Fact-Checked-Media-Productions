@@ -1,0 +1,94 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeContainer h2,h3,h4 {
+  color: #338877 ;
+}
+.upperHome {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .upperHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .upperHomeLeft {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .homeImages {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .upperHomeRight {
+    font-size: large;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .homeLogo{
+    display: none;
+  }
+  .lowerHome {
+    background-color: darkgrey;
+  }
+  .lowerHome h2 {
+    text-align: center;
+  }
+  
+}
+@media only screen and (min-width: 769px) {
+  .homeImages {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .upperHomeRight {
+    font-size: large;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+  }
+  .homeLogo{
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+  }
+  .upperHomeLeft {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .lowerHome {
+    background-color: darkgrey;
+  }
+  .lowerHome h2 {
+    text-align: center;
+  }
+}
+.homeLogo img {
+  width: 30%;
+  margin-right: 5%;
+}
