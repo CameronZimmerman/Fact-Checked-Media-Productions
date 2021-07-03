@@ -50,6 +50,9 @@
   
 }
 @media only screen and (min-width: 769px) {
+  .upperHome {
+    margin-bottom: 10%;
+  }
   .homeImages {
     width: 75%;
     display: flex;
@@ -81,14 +84,14 @@
     justify-content: flex-start;
     align-items: center;
   }
-  .lowerHome {
-    background-color: darkgrey;
-  }
   .lowerHome h2 {
     text-align: center;
   }
 }
 .homeLogo img {
-  width: 30%;
+  width: 15%;
   margin-right: 5%;
+}
+.homeMainText p {
+  line-height: 2em;
 }

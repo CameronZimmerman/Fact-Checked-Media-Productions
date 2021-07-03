@@ -12,7 +12,7 @@ const Header = () => {
     <div className={style.header}>
       <section onClick={() => history.push('/')}>
         <img
-          src="http://placekitten.com/75/75"
+          src="/assets/FactCheckedCropped.png"
           alt="Fact checked media productions"
         />
         <h1>FACT CHECKED MEDIA PRODUCTIONS</h1>
