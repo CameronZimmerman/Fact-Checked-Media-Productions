@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 import Header from '../Header';
+import Footer from '../Footer';
 import Home from '../pages/Home';
 import Work from '../pages/Work';
 import YourVoice from '../pages/YourVoice';
@@ -28,6 +29,7 @@ export default function App() {
             <Contact />
           </Route>
         </Switch>
+        <Footer/>
       </Router>
     </>
   );

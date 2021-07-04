@@ -1,0 +1,9 @@
+.service {
+  display: flex;
+  flex-direction: column;
+}
+
+.service img {
+  width: auto;
+  height: 15em;
+}

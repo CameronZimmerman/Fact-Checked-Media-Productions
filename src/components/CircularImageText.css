@@ -1,0 +1,45 @@
+
+@media only screen and (max-width: 768px) {
+  .circularImageText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5%;
+  }
+  
+  .circularImageTextImage {
+    position: relative;
+    max-width: 100px;
+    max-height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .circularImageTextImage img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .circularImageText {
+    padding: 2.5%;
+    display: flex;
+  }
+  
+  .circularImageTextImage {
+    position: relative;
+    width: 10em;
+    height: 10em;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .circularImageTextImage img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.circularImageText p {
+  align-self: center;
+  margin-left: 1em;
+}
