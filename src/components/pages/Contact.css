@@ -18,6 +18,10 @@
     width: 75%;
     margin-bottom: 10%;
   }
+  .contactForm textarea {
+    height: 6em;
+    width: 15em;
+  }
   
  }
 
@@ -62,11 +66,11 @@
 .contactForm button {
   width: fit-content;
 }
-.contactForm textarea {
-  resize: none;
-}
 .highlight {
   color: #1d4d43;
   font-weight: bold;
+}
+.error {
+  color: red;
 }
 

@@ -1,29 +1,46 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router';
+import validateEmail from '../../utils/validateEmails';
 import style from './Contact.css';
 
 const Contact = () => {
+  const history = useHistory();
+  const params = new URLSearchParams(history.location.search);
 
   const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState(
+    params.get('meeting') ? 
+      'Hello, my name is - and I was hoping to set up a meeting with you to discuss my podcast. My availability is - ' :
+      ''
+  );
+
+  const [error, setError] = useState('');
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    console.log('hello');
-    fetch('http://localhost:5000/api/email', {
-      method: 'POST',
-      cache: 'no-cache',
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({ message, email })
-    }).then(response => {
-      return response.json();
-    }).then(data => {
-      console.log(data);
-    }).catch(err => {
-      console.log(err);
-    });
+    if(!email || !validateEmail(email)) {
+      setError('Please enter a valid email');
+    } else if(!message) {
+      setError('Please enter a message');
+    } else {
+      setError('');
+      fetch('http://localhost:5000/api/email', {
+        method: 'POST',
+        cache: 'no-cache',
+        headers : { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({ message, email })
+      }).then(response => {
+        return response.json();
+      }).then(data => {
+        console.log(data);
+      }).catch(err => {
+        console.log(err);
+      });
+    }
+    
   };
 
   return (
@@ -40,6 +57,7 @@ const Contact = () => {
       </div>
       <div className={style.contactForm}>
         <form>
+          {error && <div className={style.error}>{error}</div>}
           <label htmlFor="email">
             <h2>Email</h2>
           </label>
