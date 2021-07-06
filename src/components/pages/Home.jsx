@@ -14,22 +14,26 @@ const Home = () => {
             <CaptionedImage
               heading="Lions Of Liberty"
               image="/assets/LionsOfLiberty.png" 
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quis, adipisci officia libero cupiditate architecto eligendi "
+              text="Marc Clair, Brian McWillams, and John Odermatt provide 3 unique shows exploring liberty in one podcast feed."
+              link="https://www.lionsofliberty.com/"
               />
               <CaptionedImage
               heading="I am Andy's mom"
               image="/assets/AndysMom.png" 
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quis, adipisci officia libero cupiditate architecto eligendi "
+              text="Andy's Mom is a podcast aimed to openly discuss and honestly approach the topic of grief in our society."
+              link="https://andysmom.com/"
               />
               <CaptionedImage
               heading="The Paradocs"
               image="/assets/theparadocs.png" 
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quis, adipisci officia "
+              text="Join Dr. Eric Larson for a fun, informative, and lighthearted podcast helping us learn more about the practice of medicine."
+              link="https://theparadocs.com/"
               />
               <CaptionedImage
               heading="Counter Flow with Buck Johnson"
               image="/assets/counterflow_cover_art.jpg" 
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quis, adipisci officia libero cupiditate architecto eligendi "
+              text="Buck Johnson features discussions with individuals outside of mainstream left/right binary politics, adressing philosophy, lifestyle and freedom."
+              link="https://deathtotyrants.libsyn.com/"
             />
           </div>
         </section>

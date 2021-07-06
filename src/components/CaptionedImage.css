@@ -40,8 +40,18 @@
 
 .overlay p, h4 {
   text-align: center;
+  font-size: 85%;
 }
 
 .overlay button {
   width: 30%;
+}
+
+.button {
+  font-family: 'Hammersmith One', sans-serif;
+  background-color: #338877;
+  color: white;
+  border: none;
+  padding: 0.35em;
+  text-decoration: none;
 }
